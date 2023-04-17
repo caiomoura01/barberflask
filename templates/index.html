@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div class="slider">
+    <ul class="slides">
+      <li style="height: 600px;">
+        <img style="filter: grayscale(50%);" src="{{ url_for ('static', filename = 'img/imagem2.jpg')}}">
+        <div class="caption left-align" style="margin-top: 110px">
+            <h3>Mitra Barbearia</h3>
+            <h5 class="light grey-text text-lighten-3">Cada detalhe pensado para <br> tornar sua experiência melhor.</h5>
+        </div>
+      </li>
+      <li style="height: 600px;">
+        <img  style="filter: grayscale(50%);" src="{{url_for ('static', filename = 'img/imagem1.jpg')}}">
+        <div class="caption right-align" style="margin-top: 110px">
+          <h3>Seu conforto</h3>
+          <h5 class="light grey-text text-lighten-3">com os melhores barbeiros da cidade.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+{% endblock %}
+
